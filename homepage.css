@@ -155,7 +155,7 @@ span.red {
     color: #cf5d59;
 }
 
-#aboutme {
+.aboutme {
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
