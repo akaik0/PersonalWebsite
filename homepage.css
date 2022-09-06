@@ -89,7 +89,7 @@ nav {
 }
 
 .nav-list {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 a[href*="aboutme"]:hover {
@@ -164,7 +164,7 @@ span.red {
 }
 
 .profile-pic {
-    width: 20rem;
+    width: 15rem;
     height: auto;
     border-radius: 5%;
 }
@@ -235,5 +235,13 @@ footer {
 @media screen and (min-width: 650px) {
     .logo-top {
         margin-right: 5rem;
+    }
+
+    .nav-list {
+        padding: 0 1rem;
+    }
+
+    .profile-pic {
+        width: 15rem;
     }
 }
