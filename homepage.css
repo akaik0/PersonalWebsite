@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+    font-family: 'Noto Serif JP', serif;
+    background-color: #ff7572;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    text-decoration: none;
+    height: 6rem;
+    width: 100%;
+    background-color: #cf5d59;
+
+    background-image: url(./img/logo.png);
+    background-repeat: repeat space;
+    background-size: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    padding: 1rem;
+    font-family: 'Uchen', serif;
+    text-align: center;
+    transition: 0.5s;
+    width: 100%;
+    height: 6rem;
+    background-color: rgba(207, 93, 89, 70%);
+}
+
+h1:hover {
+    padding-top: 0.25em;
+    font-size: 2.5rem;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px lightcoral;
+    ;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #ff7572;
+}
+
+.navbar {
+    margin: 0 auto;
+    height: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    z-index: 5;
+}
+
+.nav-list {
+    padding: 0 1rem;
+}
+
+a[href*="aboutme"]:hover {
+    padding-top: 0.25em;
+    font-size: 1.15rem;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #cf5d59;
+    transition: 0.5s;
+}
+
+a[href*="twitch"]:hover {
+    padding-top: 0.25em;
+    font-size: 1.15rem;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #cf5d59;
+    transition: 0.5s;
+}
+
+a[href*="art"]:hover {
+    padding-top: 0.25em;
+    font-size: 1.15rem;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #cf5d59;
+    transition: 0.5s;
+}
+
+a[href*="merch"]:hover {
+    padding-top: 0.25em;
+    font-size: 1.15rem;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #cf5d59;
+    transition: 0.5s;
+}
+
+a[href*="links"]:hover {
+    padding-top: 0.25em;
+    font-size: 1.15rem;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #cf5d59;
+    transition: 0.5s;
+}
+
+
+main {
+    background-color: #f3eed9;
+    padding: 2rem 2rem;
+    width: 100%;
+    max-width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 2rem;
+
+}
+
+h2 {
+    margin: 1rem 0;
+    padding-bottom: 0.2rem;
+}
+
+span.red {
+    color: #cf5d59;
+}
+
+#aboutme {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 20rem;
+    height: auto;
+    border-radius: 5%;
+}
+
+.description {
+    color: rgba(0, 0, 0, 0.637);
+    display: block;
+}
+
+.div-intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.637);
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+.div-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-list {
+    margin: 1rem 0;
+}
+
+hr {
+    border-top: 0.1em solid #cf5d59;
+    margin: 2rem 0;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cf5d59;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.logo-top {
+    width: 3rem;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
+
+@media screen and (min-width: 650px) {
+    .logo-top {
+        margin-right: 5rem;
+    }
+}
