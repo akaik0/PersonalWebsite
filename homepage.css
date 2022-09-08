@@ -201,6 +201,12 @@ hr {
     display: inline;
 }
 
+.link:hover {
+    font-size: large;
+    background-color: #ff7472a2;
+    color: #f3eed9;
+}
+
 footer {
     display: flex;
     justify-content: center;
