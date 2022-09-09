@@ -199,6 +199,7 @@ hr {
 .link {
     color: #cf5d59;
     display: inline;
+    transition: 0.5s;
 }
 
 .link:hover {
@@ -226,11 +227,13 @@ hr {
     padding: 1rem;
     padding-top: 0;
 
+
 }
 
 #links:hover {
     color: #cf5d59;
     font-size: 1.75rem;
+    transition: 0.5s;
 }
 
 .links-div {
