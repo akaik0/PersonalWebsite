@@ -207,6 +207,51 @@ hr {
     color: #f3eed9;
 }
 
+.myart {
+    display: flex;
+    flex-direction: column;
+}
+
+.drawings {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ig {
+    width: 15rem;
+    height: auto;
+    padding: 1rem;
+    padding-top: 0;
+
+}
+
+#links:hover {
+    color: #cf5d59;
+    font-size: 1.75rem;
+}
+
+.links-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.mylinks {
+    margin-bottom: 1rem;
+    flex-shrink: 1;
+    text-align: center;
+}
+
+.mylinks:last-child {
+    margin-bottom: 0;
+}
+
+
+
 footer {
     display: flex;
     justify-content: center;
