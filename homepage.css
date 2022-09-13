@@ -29,6 +29,15 @@ a {
     color: inherit;
 }
 
+i {
+    margin-right: 0.5rem;
+    color: #cf5d59;
+}
+
+li {
+    margin: 0.3rem;
+}
+
 ul {
     list-style: none;
 }
@@ -93,9 +102,6 @@ nav {
     padding: 0 0.5rem;
 }
 
-
-
-
 .nav-list:hover {
     padding-top: 0.25em;
     font-size: 1.15rem;
@@ -121,7 +127,6 @@ main {
 h2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
-
 }
 
 span.red {
@@ -206,7 +211,10 @@ hr {
     font-size: large;
     background-color: #ff7472a2;
     color: #f3eed9;
+    padding: 0 0.5rem;
+    border-radius: 5%;
 }
+
 
 .myart {
     display: flex;
@@ -226,14 +234,13 @@ hr {
     height: auto;
     padding: 1rem;
     padding-top: 0;
-
-
 }
 
 #links:hover {
     color: #cf5d59;
     font-size: 1.75rem;
     transition: 0.5s;
+    animation: ease-in-out;
 }
 
 .links-div {
@@ -275,16 +282,85 @@ footer {
     margin-left: 0.2rem;
 }
 
-@media screen and (min-width: 650px) {
-    .logo-top {
-        margin-right: 5rem;
-    }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 
     .nav-list {
-        padding: 0 1rem;
+        padding: 0 2rem;
+        font-size: 1.3rem;
     }
 
     .profile-pic {
-        width: 15rem;
+        width: 30rem;
+        margin-bottom: 1rem;
     }
+
+    .gif {
+        width: 25rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .nav-list {
+        padding: 0 3rem;
+        font-size: 1.3rem;
+    }
+
+    article {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .div-intro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio {
+        margin: 3.75rem 5rem;
+
+    }
+
+    .drawings {
+        display: flex;
+        flex-direction: ;
+        flex-wrap: wrap;
+        flex-shrink: 2;
+    }
+
+    .ig {
+        width: 30%;
+    }
+
+    .div-ul {
+        margin-bottom: 3rem;
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0.5rem 0;
+
+    }
+
+    .profile-pic {
+        width: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    .twitch-div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .gif {
+        width: 25rem;
+        margin: 0 3rem;
+    }
+
+
 }
