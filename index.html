@@ -5,7 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
     <title>AKAI.KO Homepage</title>
+    <meta name="title" content="AKAI.KO Homepage">
+    <meta name="description" content="Akaiko - programmer, artist, streamer and more">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akaiko.me/">
+    <meta property="og:title" content="AKAI.KO Homepage">
+    <meta property="og:description" content="Akaiko - programmer, artist, streamer and more">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://akaiko.me/">
+    <meta property="twitter:title" content="AKAI.KO Homepage">
+    <meta property="twitter:description" content="Akaiko - programmer, artist, streamer and more">
+    <meta property="twitter:image" content="">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,101 +48,105 @@
 
 <body>
 
-
-    <header>
+    <header id="fade">
         <h1>
-            <a href="">AKAI.KO</a>
+            AKAI.KO
         </h1>
     </header>
 
+    <span id="scroll"><i class="fa-solid fa-chevron-down fa-bounce" style="color:black;"></i></span>
+
     <nav>
         <ul class="navbar">
-            <!--<li><a href="www.akaiko.net"><img src="./img/logo.png" alt="logo" class="logo-top"></a></li>-->
+            <li><span></span><a href=""><img class="homepage" src="./img/logo.png" alt="logo"></a></li>
             <li class="nav-list"><a href="#aboutme">About me</a></li>
             <li class="nav-list"><a href="#twitch">Twitch</a></li>
-            <li class="nav-list"><a href="#art">Art</a></li>
-            <li class="nav-list"><a href="#merch">Merch</a></li>
-            <li class="nav-list"><a href="#links">Links</a></li>
+            <li class="nav-list"><a href="/art/art.html">Art</a></li>
+            <!--<li class="nav-list"><a href="#merch">Merch</a></li>
+            <li class="nav-list"><a href="#links">Links</a></li>-->
         </ul>
     </nav>
 
 
 
-    <main>
-        <div class="aboutme-div">
-            <article>
-                <div class="div-intro">
-                    <h2>
-                        <p>Hi! I'm <span class="red">Akai</span>
-                    </h2>
+    <div class="aboutme-div">
+        <div class="div-intro">
+            <h2 class="greeting fade-in">
+                Hi! I'm <span class="red">Akai</span>
+            </h2>
 
-                    <h3>I'm a starting web developer, streamer
-                        and artist.</h3> <br>
+            <h3 class="fade-in">A starting web developer </h3>
+            <h3 class="fade-in">Streamer</h3>
+            <h3 class="fade-in">Artist</h3> <br>
 
-                    <div><img src="./img/photo_2022-07-24_15-15-24.jpg" alt="My photo" class="profile-pic"></div>
+            <div><img src="./img/photo_2022-07-24_15-15-24.jpg" alt="profile-picture" class="profile-pic fade-in"></div>
 
-                    <p class="description">
-                        If I should describe myself with three words they would be probably curious, interesting and
-                        creative!
-                    </p>
-                </div>
-
-                <div class="bio">
-                    <h2 id="aboutme">ABOUT <span class="red">ME</span> </h2>
-                    <div class="div-grid">
-
-                        <div class="div-ul">
-                            <p class="p-grid"> <i class="fa-regular fa-heart"></i> I love:</p>
-                            <ul class="ul-grid">
-                                <li>Technology</li>
-                                <li>Animals</li>
-                                <li>Shiny things</li>
-                                <li>Videogames</li>
-
-                            </ul>
-                        </div>
-
-                        <div class="div-ul">
-                            <p class="p-grid"><i class="fa-solid fa-heart-crack"></i> I hate:</p>
-                            <ul>
-                                <li>Slow internet</li>
-                                <li>Bad scents</li>
-                                <li>Lies</li>
-                                <li>Bugs</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div class="desc">
-                        <p>I am an <span class="red">information engineer</span> and artist based in Italy. Currently
-                            I am studying for my
-                            master degree
-                            in <span class="red">ICT for Internet and Multimedia</span> .
-                            Lately I descovered a new passion: WEB DEVELOPMENT
-                            and can't wait to continue my journey in this direction.
-                        </p>
-
-                        <div>
-                            <p>Some of the technologies I have been working with:</p>
-                            <ul>
-                                <li><i class="fa-solid fa-spinner fa-spin-pulse"></i> Java</li>
-                                <li><i class="fa-solid fa-spinner fa-spin-pulse"></i> HTML & CSS</li>
-                                <li><i class="fa-solid fa-spinner fa-spin-pulse"></i> Javascript</li>
-                            </ul> <br>
-                        </div>
-
-                        <p>Besides my studies and interest in technology I have different hobbies. I love to play video
-                            games,
-                            read and paint.
-                        </p>
-                    </div>
-                </div>
-
-            </article>
+            <!-- <p class="description">
+                If I should describe myself with three words they would be probably curious, interesting and
+                creative!
+            </p> -->
         </div>
 
+        <div class="bio">
+            <h2 id="aboutme" class="fade-in">ABOUT <span class="red">ME</span> </h2>
+            <div class="div-grid">
 
+                <div class="div-ul">
+                    <p class="p-grid"> <i class="fa-regular fa-heart"></i> I love:</p>
+                    <ul class="ul-grid">
+                        <li>Technology</li>
+                        <li>Animals</li>
+                        <li>Shiny things</li>
+                        <li>Videogames</li>
+
+                    </ul>
+                </div>
+
+                <div class="div-ul">
+                    <p class="p-grid"><i class="fa-solid fa-heart-crack"></i> I hate:</p>
+                    <ul>
+                        <li>Slow internet</li>
+                        <li>Bad scents</li>
+                        <li>Lies</li>
+                        <li>Bugs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            <div class="desc fade-in">
+                <p>I am an <span class="red">information engineer</span> and artist based in Italy. Currently
+                    I am studying for my
+                    master degree
+                    in <span class="red">ICT for Internet and Multimedia</span> .
+                    Lately I descovered a new passion: WEB DEVELOPMENT
+                    and can't wait to continue my journey in this direction.
+                </p>
+
+                <div>
+                    <p>Some of the technologies I have been working with:</p>
+                    <ul>
+                        <li><i class="fa-solid fa-spinner fa-spin-pulse"></i> Java</li>
+                        <li><i class="fa-solid fa-spinner fa-spin-pulse"></i> HTML & CSS</li>
+                        <li><i class="fa-solid fa-spinner fa-spin-pulse"></i> Javascript</li>
+                    </ul> <br>
+                </div>
+
+                <p>Besides my studies and interest in technology I have different hobbies. I love to play video
+                    games,
+                    read and paint.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        &copy; 2022 Akaiko.com
+        <img class="logo" src="./img/logo.png" alt="logo">
+    </footer>
+    <!--
         <h2 id="twitch">TWITCH</h2>
         <div class="twitch-div">
 
@@ -217,20 +238,33 @@
                 </ul>
 
             </div>
-
         </div>
-
-    </main>
-
-    <footer>
-        &copy; 2022 Akaiko.com
-        <img class="logo" src="./img/logo.png" alt="logo">
-    </footer>
-
-
-    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/jquery.ScrollMagic.min.js"
+        integrity="sha512-RoCOXSeYXosX4PjvRhUz0X+pmdhOJJkbjYZzmZ9dS1Iy9E/WnkTqMy+LVkPX3BV0ZgSFB2AYQKfi6ZKdNdXJnQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
+        integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"
+        integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"
+        integrity="sha512-/8phkpsAzxsbuX18zNkQ2gCq4Q5JsWoPo1jHLDeZorPUHRtx9YJxpdk+os05oDhPJVCNzA2/NMl4rmJyQ+6Fvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"
+        integrity="sha512-I0VFyPo7hdM7YrEbQ0pvX4bX2904k0+B19u/xBrPrQoMprfcSnIDfGFD8kP52GbAhwtDjkEVhXlQvj8+vkJyew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"
+        integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/BezierPlugin.min.js"
+        integrity="sha512-oOy5+mtZRcqjn6b9k4oj+tk2/hVIetzOAM9Y5cndEHgLxiIGavAz1agbHf6JjGzxXZ2SMbu08Uy1DDF0UwA0qQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
 
 </body>
 
