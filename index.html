@@ -14,7 +14,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://akaiko.me/">
     <meta property="og:title" content="AKAI.KO Homepage">
-    <meta property="og:description" content="Akaiko - programmer, artist, streamer and more">
+    <meta property="og:description" content="Akai - programmer, artist, streamer and more">
     <meta property="og:image" content="">
 
     <!-- Twitter -->
@@ -34,6 +34,7 @@
 
     <script src="https://kit.fontawesome.com/21ba8f42eb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="homepage.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
@@ -47,14 +48,17 @@
 -->
 
 <body>
+    <div class="wallpaper">
+        <header id="header">
+            <h1>
+                AKAI.KO
+            </h1>
+        </header>
 
-    <header id="fade">
-        <h1>
-            AKAI.KO
-        </h1>
-    </header>
-
-    <span id="scroll"><i class="fa-solid fa-chevron-down fa-bounce" style="color:black;"></i></span>
+        <div id="arrow-down"><span><i class="arrow fa-solid fa-chevron-down fa-bounce fa-2x"
+                    style="color:black;"></i></span>
+        </div>
+    </div>
 
     <nav>
         <ul class="navbar">
@@ -71,15 +75,19 @@
 
     <div class="aboutme-div">
         <div class="div-intro">
-            <h2 class="greeting fade-in">
+            <h2 class="greeting" data-aos-mirror="true" data-aos="fade-up" data-aos-delay="2000"
+                data-aos-duration="1000">
                 Hi! I'm <span class="red">Akai</span>
             </h2>
 
-            <h3 class="fade-in">A starting web developer </h3>
-            <h3 class="fade-in">Streamer</h3>
-            <h3 class="fade-in">Artist</h3> <br>
+            <h3 data-aos="fade-right" data-aos-mirror="true" data-aos-delay="3000" data-aos-duration="1000">A starting
+                web developer </h3>
+            <h3 data-aos="fade-left" data-aos-mirror="true" data-aos-delay="3000" data-aos-duration="1000">Streamer</h3>
+            <h3 data-aos="fade-right" data-aos-mirror="true" data-aos-delay="3000" data-aos-duration="1000">Artist</h3>
+            <br>
 
-            <div><img src="./img/photo_2022-07-24_15-15-24.jpg" alt="profile-picture" class="profile-pic fade-in"></div>
+            <div><img id="image" src="./img/photo_2022-07-24_15-15-24.jpg" alt="profile-picture" data-aos="flip-up"
+                    data-aos-delay="3000" data-aos-duration="1000" class="profile-pic fade-in"></div>
 
             <!-- <p class="description">
                 If I should describe myself with three words they would be probably curious, interesting and
@@ -88,8 +96,8 @@
         </div>
 
         <div class="bio">
-            <h2 id="aboutme" class="fade-in">ABOUT <span class="red">ME</span> </h2>
-            <div class="div-grid">
+            <h2 id="aboutme" data-aos="fade-up">ABOUT <span class="red">ME</span> </h2>
+            <div class="div-grid" data-aos="fade-up">
 
                 <div class="div-ul">
                     <p class="p-grid"> <i class="fa-regular fa-heart"></i> I love:</p>
@@ -102,7 +110,7 @@
                     </ul>
                 </div>
 
-                <div class="div-ul">
+                <div class="div-ul" data-aos="fade-up">
                     <p class="p-grid"><i class="fa-solid fa-heart-crack"></i> I hate:</p>
                     <ul>
                         <li>Slow internet</li>
@@ -113,8 +121,8 @@
                 </div>
             </div>
 
-            <hr>
-            <div class="desc fade-in">
+            <hr data-aos="fade-right">
+            <div class="desc fade-in" data-aos="fade-up">
                 <p>I am an <span class="red">information engineer</span> and artist based in Italy. Currently
                     I am studying for my
                     master degree
@@ -243,7 +251,7 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/jquery.ScrollMagic.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/jquery.ScrollMagic.min.js"
         integrity="sha512-RoCOXSeYXosX4PjvRhUz0X+pmdhOJJkbjYZzmZ9dS1Iy9E/WnkTqMy+LVkPX3BV0ZgSFB2AYQKfi6ZKdNdXJnQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
@@ -263,7 +271,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/BezierPlugin.min.js"
         integrity="sha512-oOy5+mtZRcqjn6b9k4oj+tk2/hVIetzOAM9Y5cndEHgLxiIGavAz1agbHf6JjGzxXZ2SMbu08Uy1DDF0UwA0qQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="app.js"></script>
 
 </body>

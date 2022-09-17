@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "personal webpage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akaik0/website.git"
+  },
+  "author": "Arina Kosiakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akaik0/website/issues"
+  },
+  "homepage": "https://github.com/akaik0/website#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
