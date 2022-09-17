@@ -20,6 +20,26 @@ body {
     background-color: #ff7572;
 }
 
+.myart {
+    display: flex;
+    flex-direction: column;
+}
+
+.drawings {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ig {
+    width: 15rem;
+    height: auto;
+    padding: 1rem;
+    padding-top: 0;
+}
+
 footer {
     display: flex;
     justify-content: center;

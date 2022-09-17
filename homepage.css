@@ -32,6 +32,7 @@ body {
 
     font-family: 'Noto Serif JP', serif;
     background-color: #ff7572;
+    overflow-x: hidden;
 }
 
 p {
@@ -81,9 +82,15 @@ h1:hover {
 }
 
 h2 {
-    margin-bottom: 2rem;
-    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
     margin-top: 2rem;
+    text-align: center;
+}
+
+.greeting {
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
@@ -220,51 +227,8 @@ footer {
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.twitch-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.gameplay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.gif {
-    border-radius: 10%;
-    filter: drop-shadow(0 0 0.5rem #cf5d59)
-}
-
 .link {
-    color: #cf5d59;
+    color: #f3eed9;
     display: inline;
     transition: 0.5s;
 }
@@ -278,26 +242,6 @@ footer {
 }
 
 
-.myart {
-    display: flex;
-    flex-direction: column;
-}
-
-.drawings {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.ig {
-    width: 15rem;
-    height: auto;
-    padding: 1rem;
-    padding-top: 0;
-}
-
 #links:hover {
     color: #cf5d59;
     font-size: 1.75rem;
@@ -308,8 +252,10 @@ footer {
 .links-div {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     align-items: start;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 .mylinks {
@@ -372,7 +318,7 @@ footer {
 
     .drawings {
         display: flex;
-        flex-direction: ;
+        flex-direction: row;
         flex-wrap: wrap;
         flex-shrink: 2;
     }
