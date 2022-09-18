@@ -33,6 +33,7 @@
 
 
     <script src="https://kit.fontawesome.com/21ba8f42eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reusable.css">
     <link rel="stylesheet" href="homepage.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -71,27 +72,25 @@
         </ul>
     </nav>
 
+    <h2 class="greeting" data-aos-mirror="true" data-aos="fade-up" data-aos-duration="2000">
+        Hi! I'm <span class="red">Akai</span>
+    </h2>
+
+    <div class="sliders">
+        <h3 data-aos="fade-right" data-aos-mirror="true" data-aos-duration="2000">A starting
+            web developer </h3>
+        <h3 data-aos="fade-left" data-aos-mirror="true" data-aos-duration="2000">Streamer</h3>
+        <h3 data-aos="fade-right" data-aos-mirror="true" data-aos-duration="2000">Artist</h3>
+    </div>
 
 
     <div class="aboutme-div">
+
+
         <div class="div-intro">
-            <h2 class="greeting" data-aos-mirror="true" data-aos="fade-up" data-aos-duration="2000">
-                Hi! I'm <span class="red">Akai</span>
-            </h2>
-
-            <h3 data-aos="fade-right" data-aos-mirror="true" data-aos-duration="2000">A starting
-                web developer </h3>
-            <h3 data-aos="fade-left" data-aos-mirror="true" data-aos-duration="2000">Streamer</h3>
-            <h3 data-aos="fade-right" data-aos-mirror="true" data-aos-duration="2000">Artist</h3>
-            <br>
-
-            <div><img id="image" src="./img/photo_2022-07-24_15-15-24.jpg" alt="profile-picture" data-aos="fade-up"
-                    data-aos-delay="1000" data-aos-duration="2000" class="profile-pic fade-in"></div>
-
-            <!-- <p class="description">
-                If I should describe myself with three words they would be probably curious, interesting and
-                creative!
-            </p> -->
+            <div class="image"><img id="image" src="./img/photo_2022-07-24_15-15-24.jpg" alt="profile-picture"
+                    data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000" class="profile-pic fade-in">
+            </div>
         </div>
 
         <div class="bio">
@@ -121,7 +120,7 @@
             </div>
 
             <hr data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
-            <div class="desc fade-in" data-aos="fade-up" data-aos-duration="2000">
+            <div class="desc" data-aos="fade-up" data-aos-duration="2000">
                 <p>I am an <span class="red">information engineer</span> and artist based in Italy. Currently
                     I am studying for my
                     master degree
@@ -151,23 +150,27 @@
     </div>
 
 
-    <h2 id="links"> <a href="https://linktr.ee/ak_aiko">Contacts and socials</a></h2>
-    <div class="links-div">
-        <div class="mylinks">
-            <ul>
-                <li style="color:#f3eed9"><i class="fa-solid fa-at"></i> <a class="link"
-                        href="mailto:akaikosocial@gmail.com">akaikosocial@gmail.com</a></li>
-                <li><i class="fa-brands fa-instagram"></i><a class="link"
-                        href="https://www.instagram.com/ak_aik0/">Instagram</a></li>
-                <li><i class="fa-brands fa-tiktok"></i><a class="link" href="https://www.tiktok.com/@ak_aik0">TikTok</a>
-                </li>
-                <li><i class="fa-brands fa-twitch"></i><a class="link" href="https://www.twitch.tv/ak_aiko">Twitch</a>
-                </li>
-                <li><i class="fa-brands fa-discord"></i><a class="link"
-                        href="https://discord.gg/AyZfty3                    ">Discord</a></li>
-            </ul>
-        </div>
+    <h2 id="links" data-aos="fade-up" data-aos-duration="2000"> <a href="https://linktr.ee/ak_aiko"
+            target="_blank">Contacts and
+            socials</a></h2>
+    <div class="div-links" data-aos="fade-up" data-aos-duration="1000">
+        <ul class="link-list">
+            <li style="color:#f3eed9"><i class="fa-solid fa-at"></i> <a class="link" target="_blank"
+                    href="mailto:akaikosocial@gmail.com">akaikosocial@gmail.com</a></li>
+            <li><i class="fa-brands fa-instagram"></i><a class="link" target="_blank"
+                    href="https://www.instagram.com/ak_aik0/">Instagram</a></li>
+            <li><i class="fa-brands fa-tiktok"></i><a class="link" target="_blank"
+                    href="https://www.tiktok.com/@ak_aik0">TikTok</a>
+            </li>
+            <li><i class="fa-brands fa-twitch"></i><a class="link" target="_blank"
+                    href="https://www.twitch.tv/ak_aiko">Twitch</a>
+            </li>
+            <li><i class="fa-brands fa-discord"></i><a target="_blank" class="link"
+                    href="https://discord.gg/AyZfty3                    ">Discord</a></li>
+        </ul>
     </div>
+
+
 
     <footer>
         &copy; 2022 Akaiko.com
