@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Uchen&display=swap"
+        rel="stylesheet" />
+
     <script src="https://kit.fontawesome.com/21ba8f42eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../reusable.css">
     <link rel="stylesheet" href="art-stylesheet.css">
 </head>
 
@@ -18,44 +24,44 @@
         </h1>
     </header>
 
-    <main></main>
-
     <nav>
         <ul class="navbar">
-            <!--<li><a href="www.akaiko.net"><img src="./img/logo.png" alt="logo" class="logo-top"></a></li>-->
-            <li class="nav-list"><a href="../index.html">About me</a></li>
-            <li class="nav-list"><a href="../twitch.html">Twitch</a></li>
-            <li class="nav-list"><a href="art.html">Art</a></li>
+            <li><a href=""><img class="homepage" src="../img/logo.png" alt="logo"></a></li>
+            <li class="nav-list"><a href="#aboutme">About me</a></li>
+            <li class="nav-list"><a href="../twitch/twitch.html">Twitch</a></li>
+            <li class="nav-list"><a href="../art/art.html">Art</a></li>
             <!--<li class="nav-list"><a href="#merch">Merch</a></li>
-        <li class="nav-list"><a href="#links">Links</a></li>-->
+            <li class="nav-list"><a href="#links">Links</a></li>-->
         </ul>
     </nav>
 
-    <h2 id="art">MY <span class="red">ART</span> </h2>
+    <div class="introduction">
+        <p>I am a self-taught artist. In the last years I tried different styles and tecnique from traditional drawings,
+            to digital illustrations to painting.</p>
+    </div>
+
+
     <div class="myart">
-        <div class="drawings">
-            <img class="ig" src="./img/frog2.jpg" alt="">
-            <img class="ig" src="./img/shadow1.jpg" alt="">
-            <img class="ig" src="./img/sketch2.jpg" alt="">
-            <img class="ig" src="./img/frog.jpg" alt="">
-            <img class="ig" src="./img/sketch1.jpg" alt="">
-            <img class="ig" src="./img/weapon1.jpg" alt="">
-            <img class="ig" src="./img/weapon2.jpg" alt="">
-            <img class="ig" src="./img/weapon3.jpg" alt="">
+        <h2 id="art">MY <span class="red">CREATIONS</span> </h2>
 
-        </div>
-
-        <div class="desc">
-            <p><span> In the past years I tried my best to improve my art and drawing skills. I've been trying to
-                    learn
-                    as
-                    much as I could and try different styles.
-
-                    <span> If you want to chek out my art and my progress you can do it <a class="link"
-                            href="https://www.instagram.com/dull.akai/">here</a></span>
-                </span>
+        <div class="socials">
+            <p> <span>For more: <span><i class="fa-brands fa-instagram"></i><a class="link"
+                            href="https://www.instagram.com/dull.akai/">Instagram</a></span>
+                    <i class="fa-brands fa-tiktok"></i><a href="https://www.tiktok.com/@dullakai"
+                        class="link">TikTok</a></span>
 
             </p>
+        </div>
+
+        <div class="drawings">
+            <div class="img-container"> <img class="ig" src="../img/frog2.jpg" alt=""></div>
+            <div class="img-container"> <img class="ig" src="../img/shadow1.jpg" alt=""></div>
+            <div class="img-container"> <img class="ig" src="../img/sketch2.jpg" alt=""></div>
+            <div class="img-container"> <img class="ig" src="../img/frog.jpg" alt=""></div>
+            <div class="img-container"> <img class="ig" src="../img/sketch1.jpg" alt=""></div>
+            <div class="img-container"> <img class="ig" src="../img/weapon1.jpg" alt=""></div>
+            <div class="img-container"> <img class="ig" src="../img/weapon2.jpg" alt=""></div>
+            <div class="img-container"> <img class="ig" src="../img/weapon3.jpg" alt=""></div>
         </div>
     </div>
 
@@ -64,6 +70,8 @@
         <img class="logo" src="../img/logo.png" alt="logo">
     </footer>
 
+
+    <script src="../app.js"></script>
 </body>
 
 </html>

@@ -8,24 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body[data-aos-delay='4000'] [data-aos],
-[data-aos][data-aos][data-aos-delay='4000'] {
-    transition-delay: 4000ms;
-}
-
-body[data-aos-delay='5000'] [data-aos],
-[data-aos][data-aos][data-aos-delay='5000'] {
-    transition-delay: 5000ms;
-}
-
-body[data-aos-delay='6000'] [data-aos],
-[data-aos][data-aos][data-aos-delay='6000'] {
-    transition-delay: 6000ms;
-}
-
 body {
     display: flex;
-    width: 100vvw;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -67,6 +53,7 @@ hr {
 h1 {
     padding: 1rem;
     font-family: 'Uchen', serif;
+    margin-top: 2rem;
     text-align: center;
     transition: 0.5s;
     width: 100%;
@@ -99,7 +86,7 @@ header {
     background-color: #cf5d59;
 
     background-image: url(./img/logo.png);
-    background-repeat: repeat space;
+    background-repeat: repeat;
     background-size: 5rem;
 
     display: flex;
