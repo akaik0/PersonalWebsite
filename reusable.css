@@ -143,6 +143,7 @@ span.red {
 
 footer {
     width: 100%;
+    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;

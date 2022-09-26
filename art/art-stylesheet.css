@@ -2,6 +2,11 @@ header {
     height: fit-content;
 }
 
+.wallpaper {
+    width: 100%;
+    height: 10%;
+}
+
 h1 {
     margin: 0;
     display: flex;
@@ -12,6 +17,7 @@ h1 {
 
 nav {
     opacity: 1;
+    margin-top: ;
 }
 
 .introduction {
