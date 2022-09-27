@@ -102,6 +102,10 @@ nav {
     grid-row: span 3;
 }
 
+.h-4 {
+    grid-row: span 4;
+}
+
 
 i {
     margin: 0 0.5rem;
@@ -110,6 +114,7 @@ i {
 .link {
     color: #f3eed9;
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .nav-list {
