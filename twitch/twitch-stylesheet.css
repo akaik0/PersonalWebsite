@@ -201,3 +201,36 @@ footer {
     margin-top: 0.2rem;
     margin-left: 0.2rem;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .nav-list {
+        padding: 0 2rem;
+        font-size: 1.3rem;
+    }
+
+    .introduction .social {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .nav-list {
+        padding: 0 2rem;
+        font-size: 1.3rem;
+    }
+
+    .introduction .social {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+}
