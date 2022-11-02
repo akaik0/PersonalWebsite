@@ -156,16 +156,22 @@ footer {
     width: 100%;
     text-align: center;
     padding: 1rem;
+    position: relative;
+    bottom: 0;
 }
 
 .logo {
     width: 3rem;
 }
 
+.twitch-link {
+    margin-bottom: 2em;
+}
+
 .twitch-div {
     display: flex;
     width: 90%;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     align-items: center;
 }
@@ -189,17 +195,140 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    padding-top: 1em;
+    width: 50%;
 }
 
 .gif {
     border-radius: 10%;
-    filter: drop-shadow(0 0 0.5rem #cf5d59)
+    filter: drop-shadow(0 0 0.5rem #cf5d59);
 }
 
 .homepage {
     width: 2.5rem;
     margin-top: 0.2rem;
     margin-left: 0.2rem;
+}
+
+.div-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    flex-shrink: 1;
+    text-align: center;
+    background-color: rgba(243, 238, 217, 15%);
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.games {
+    text-decoration: underline;
+}
+
+.games img {
+    width: 30%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.games img:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    position: relative;
+    margin: 2em;
+}
+
+.carousel>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.slide>img {
+    width: 40%;
+    height: auto;
+    margin: 3em;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    transform: translateY(-15%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+.desc {
+    margin-bottom: 2em;
+}
+
+.content {
+    width: 100%;
+    text-align: left;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -214,6 +343,36 @@ footer {
 
     h2 {
         font-size: 2.5rem;
+    }
+
+    .list {
+        display: inline;
+        margin-top: 1em;
+    }
+
+    .games {
+        width: 40%;
+    }
+
+    .games img {
+        width: 100%;
+        border-color: #f3eed9;
+    }
+
+    .list {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 1rem;
+        margin: 1rem 0;
+    }
+
+    .carousel {
+        margin: 1em;
     }
 
 }
@@ -232,5 +391,46 @@ footer {
     h2 {
         font-size: 3rem;
     }
+
+    .container {
+        margin-bottom: 5em;
+    }
+
+    .carousel {
+        margin: 10em;
+    }
+
+    .list {
+        display: inline;
+        margin-top: 1em;
+    }
+
+    .games {
+        width: 20%;
+    }
+
+    .games img {
+        width: 100%;
+        border-color: #f3eed9;
+    }
+
+    .list {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 1rem 0;
+    }
+
+    .div-links {
+        margin-bottom: 3em;
+    }
+
+
 
 }
